@@ -13,7 +13,7 @@ axios.get('https://lambda-times-backend.herokuapp.com/topics')
         // Iterate over the topics creating a new Tab component and add it to the DOM
         // under the .topics element.
         response.data.topics.forEach(topic => {
-            console.log(topic);
+            //console.log(topic);
             topicsDiv.appendChild(createTab(topic));
         });
     })

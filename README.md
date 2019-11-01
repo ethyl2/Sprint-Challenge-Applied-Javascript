@@ -28,15 +28,29 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. What is the DOM?
+**1. What is the DOM?**
 
-2. What is an event?
+The DOM stands for Document Object Model. It’s a language-neutral object representation of the HTML elements of a web page, and an API (which is an application program interface -- a set of routines, protocols, and tools, used to specify how software components interact successfully with each other). It's created by the browser when a web page is loaded. It has the structure of a tree, with nodes and objects. It allows access to the parts of the page and the ability to change them.
 
-3. What is an event listener?
+**2. What is an event?**
 
-4. Why would we convert a NodeList into an Array?
+An event is an action taken on an element of a web page, because of something a user or API does, or because something changes in an element. Some events are ‘click’, ‘mousedown’, ‘load’, and ‘touchstart.’ There's lots of them.
 
-5. What is a component?
+**3. What is an event listener?**
+
+It is a callback function that is to be executed only when a specified event happens.
+
+elementToWatch.addEventListener('event', listenerCallback);
+
+.addEventListener() takes 2 required paramenters, the event type and the listener callback function that is called only when that event type happens on that element.
+
+**4. Why would we convert a NodeList into an Array?**
+
+A NodeList is not technically an Array. Converting it into an Array is necessary in order to use Array methods, which can be very helpful when dealing with elements in a NodeList. NodeLists have a .forEach(), but don't any of the others Array methods, such as .map().
+
+**5. What is a component?**
+
+A component is generally a smaller piece or bundle of code that is DRY (helps to eliminate repeating code) and is reusable. It can have everything it needs to function, packaged together -- an example would be a directory with subdirectories containing html, css, and scripts, all needed to make a specific element. A component can be used to build elements that have similar styles, structure and function. They are generally created to be used in combination with other parts, and can be reused in different projects.
 
 ### Git Set up
 

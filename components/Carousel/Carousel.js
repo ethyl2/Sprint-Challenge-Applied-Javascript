@@ -26,8 +26,9 @@ const carouselContainer = document.querySelector('.carousel-container');
 
 function createCarousel() {
   const carouselDiv = create('div');
-  //TODO: fix 'carousel' css to it will display
-  //carouselDiv.classList.add('carousel');
+  //TODO: fix 'carousel' css so it will display
+  carouselDiv.classList.add('carousel');
+  //carouselDiv.classList.add('dummyClass');
   
   const leftBtnDiv = create('div');
   leftBtnDiv.classList.add('left-button');
